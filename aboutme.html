@@ -3,19 +3,89 @@
 <body bgcolor="#900C3F">
 <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
 <style>
+p.small {
+    line-height: 115%;
+}
+p.big {
+    line-height: 200%;
+}
 body {
-    font-family: 'Abril Fatface';font-size: 22px;
+    font-family: 'Abril Fatface';font-size: 40px;
 }
 </style>
 </head>
 <body>
 
-    <h2><font color="white">Ashley Hau</font></h2>
-    <p><font color="white">My Portfolio</font></p>
+<p class="small">
+  <font color="white"><font size="20">Ashley Hau</font><br>
+  <font color="white"><font size="12">Portfolio
+</p>
 
-<button type="button" 
+<style>
+    .dropbtn {
+        background-color: #34495E;
+        color: white;
+        padding: 10px;
+        font-size: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2E4053;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #2E4053}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #2E4053;
+    }
+    </style>
+    </head>
+    <body>
+
+    <div class="dropdown">
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><font face="Abril Fatface"><font size="8">About Me</button></font>
+      <div class="dropdown-content">
+        <a href="#"><font size="5">TV Shows</a>
+        <a href="#"><font size="5">Gallery</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><font face="Abril Fatface"><font size="8">Projects</button></font>
+      <div class="dropdown-content">
+        <a href="#"><font size="5">Robots</a>
+      </div>
+    </div>
+
+<!-- <button type="button"
         onclick="document.write('My name is Ashley Hau, and I am a rising senior at Monta Vista High School.')">
-        About Me</button>
+        About Me</button> -->
 
 </body>
-</html> 
+</html>
